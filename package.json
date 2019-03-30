@@ -4,6 +4,7 @@
   "description": "Convert arrays of data to CSV files",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "coverage": "jest --coverage",
     "test": "jest"
   },
@@ -28,6 +29,16 @@
   "author": "Carlos Azaustre <cazaustre@gmail.com> (https://carlosazaustre.es)",
   "license": "MIT",
   "devDependencies": {
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import" :"^2.16.0",
+    "eslint": "^5.16.0",
+    "husky": "^1.3.1",
     "jest": "^24.5.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm test"
+    }
   }
 }
