@@ -8,11 +8,11 @@ script:
   - npm test
 jobs:
   include:
-  deploy:
-    provider: npm
-    email: "$EMAIL_ADDRESS"
-    api_key: "$API_KEY"
-    skip_cleanup: true
-    branches:
-      only:
-        - master
+    deploy:
+      provider: npm
+      email: "$EMAIL_ADDRESS"
+      api_key: "$API_KEY"
+      skip_cleanup: true
+      branches:
+        only:
+          - master
