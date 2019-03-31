@@ -11,6 +11,4 @@ deploy:
   email: "$EMAIL_ADDRESS"
   api_key: "$API_KEY"
   skip_cleanup: true
-  branches:
-    only:
-      - master
+  branches:  master

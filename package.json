@@ -1,6 +1,6 @@
 {
   "name": "ceseve",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert arrays of data to CSV files",
   "main": "index.js",
   "scripts": {
