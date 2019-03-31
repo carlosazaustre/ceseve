@@ -1,15 +1,11 @@
----
-language: "node_js"
-node_js:
-  - "10"
-install: npm install
-script:
-  - npm test
-jobs:
-  include:
-    deploy:
-      provider: npm
-      email: "$EMAIL_ADDRESS"
-      api_key: "$API_KEY"
-      on:
-        branch: master
+language: node_js
+node_js: 10
+before_deploy: "npm test"
+deploy:
+  provider: npm
+  email: $EMAIL_USER
+  api_key:
+    secure: $NPM_KEY
+  on:
+    tags: true
+    repo: carlosazaustre/ceseve
