@@ -1,9 +1,9 @@
 language: node_js
-node_js: 10
-before_deploy: "npm test"
+node_js: lts/*
+
 deploy:
   provider: npm
-  email: $EMAIL_USER
+  email: "cazaustre@gmail.com"
   api_key:
     secure: $NPM_KEY
   on:

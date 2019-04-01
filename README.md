@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/carlosazaustre/ceseve.svg?branch=master)](https://travis-ci.org/carlosazaustre/ceseve)
+
 # ceseve
 > Convert array of data to CSV file
 
