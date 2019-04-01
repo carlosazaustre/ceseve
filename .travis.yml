@@ -1,11 +1,10 @@
 language: node_js
 node_js: lts/*
-
 deploy:
   provider: npm
-  email: "cazaustre@gmail.com"
+  email: cazaustre@gmail.com
   api_key:
-    secure: $NPM_KEY
+    secure: PmmDpwgtlpULYDkndizT6w1+J9FRjpsfzq8TaHYA1J+PZQAgV08/0PS4l/xmKK8nGnPRSdSHHP1OEtF9d7Dwp1Q+z11vMtlIB6TlGq1jG6Pvj31xAb91G5tehHYE3wGz7BObW1O+VXmOEg76S/z6ho4cG5PwUEXQ+4xQRaO/n1dvJyuOr55hBbMaWfBWD+lE+6C1THkSH58ZRZpqgck3KyYZblcKqx6kVShBGe6hu5Fuu7ZZH2KbBFFzS6QZB7pHu+wdQopdUZ0ARQ+InD1wqVFA8eQ5M4BvFcNeJJUNCP+T20grsQVT9CtQRhkAhr/jUgXzakZaLEOtectYop4vjEwbHoAUUB5nlQC19l3SsMqDaid6Qp80QFl3YqNBAgYJwhtzgmQHjsw+8ya96uhUQ00FkR7bVyr8BWqWHMQMkKrPEv33XpbyRgtOTbRYDNpunznP7yCZ1X5ziOt4QrDrV38Jj7AxKpkC8tnW2HgrhLR08z8nz7tWRiGtbGG4ejwvBmRE2+2hkb0q9KiQeTt3bVIIVYkRwG25+2DpdWw7on1DiT8a3ssaYjUQ65RbVoSDGnJsNV6jCvBrq5g7NbOx9ICGfhNvt501q/LWywOxkiXkxNAfiFJlUR0UHsJy0U5t0xVqRFoIWo/UtPEjzLYKKmQInpmGQa37Ku7k8bte1XA=
   on:
     tags: true
     repo: carlosazaustre/ceseve
