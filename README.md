@@ -14,14 +14,25 @@ $ npm install ceseve
 const csv = require('ceseve');
 
 const data = [
-  { foo: "bar", choo: "moo" },
-  { foo: "ber", choo: "muu" }
+  { title: "foo", property: "bar" },
+  { title: "foo_2", property: "bar_2" }
 ];
 
 const csvDocument = csv(data);
 // csv:
-//  foo,moo
-//  ber,muu
+//  title,property
+//  foo,bar
+//  foo_2,bar_2
+```
+
+> You can specify separator character. Default is comma `,`
+```js
+const csvDocument = csv(data, ';');
+// csv:
+//  title;property
+//  foo;bar
+//  foo_2;bar_2
+
 ```
 
 ## License
