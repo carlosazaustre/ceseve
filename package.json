@@ -1,6 +1,6 @@
 {
   "name": "ceseve",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Convert arrays of data to CSV files",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,11 @@
     "string",
     "text"
   ],
+  "homepage": "https://github.com/carlosazaustre/ceseve#README.md",
+  "bugs": {
+    "url": "https://github.com/carlosazaustre/ceseve/issues",
+    "email": "cazaustre@gmail.com"
+  },
   "author": "Carlos Azaustre <cazaustre@gmail.com> (https://carlosazaustre.es)",
   "license": "MIT",
   "devDependencies": {
@@ -40,5 +45,10 @@
       "pre-commit": "npm run lint",
       "pre-push": "npm test"
     }
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {}
 }

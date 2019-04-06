@@ -12,5 +12,7 @@ test('Should return a csv format from an array of object', () => {
 
 test('Should return a csv splitted by semicolons', () => {
   const result = 'foo;choo\nbar;moo\nber;muu\n';
-  expect(csv(mockData, ';')).toBe(result);
+  expect(csv(mockData, {
+    separator: ';',
+  })).toBe(result);
 });
