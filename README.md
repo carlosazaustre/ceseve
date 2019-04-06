@@ -25,9 +25,11 @@ const csvDocument = csv(data);
 //  foo_2,bar_2
 ```
 
-> You can specify separator character. Default is comma `,`
+> You can specify options object:
 ```js
-const csvDocument = csv(data, ';');
+const csvDocument = csv(data, {
+  separator: ';',
+});
 // csv:
 //  title;property
 //  foo;bar
