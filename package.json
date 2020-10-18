@@ -1,9 +1,11 @@
 {
   "name": "ceseve",
-  "version": "1.2.2",
+  "version": "1.2.1",
   "description": "Convert arrays of data to CSV files",
   "main": "index.js",
   "scripts": {
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate",
     "lint": "eslint .",
     "coverage": "jest --coverage",
     "test": "jest"
@@ -34,9 +36,10 @@
   "author": "Carlos Azaustre <cazaustre@gmail.com> (https://carlosazaustre.es)",
   "license": "MIT",
   "devDependencies": {
+    "all-contributors-cli": "^6.19.0",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
-    "eslint": "^5.16.0",
     "husky": "^1.3.1",
     "jest": "^24.5.0"
   },
